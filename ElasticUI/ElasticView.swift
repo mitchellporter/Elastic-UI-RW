@@ -44,6 +44,9 @@ class ElasticView: UIView {
         elasticShape.path = UIBezierPath(rect: self.bounds).CGPath
         layer.addSublayer(elasticShape)
         
+        backgroundColor = UIColor.redColor()
+        clipsToBounds = false
+        
         // Add control points
         for controlPoint in [topControlPointView, leftControlPointView, bottomControlPointView, rightControlPointView] {
             addSubview(controlPoint)
@@ -103,7 +106,7 @@ class ElasticView: UIView {
     func animateControlPoints() {
         
         // 1
-        let overshootAmount : CGFloat = 10.0
+        let overshootAmount : CGFloat = -40.0
         
         // 2
         UIView.animateWithDuration(0.25, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.5, options: [], animations: { () -> Void in
