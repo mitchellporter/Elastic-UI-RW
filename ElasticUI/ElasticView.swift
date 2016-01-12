@@ -14,6 +14,16 @@ class ElasticView: UIView {
     private let leftControlPointView = UIView()
     private let bottomControlPointView = UIView()
     private let rightControlPointView = UIView()
+    @IBInspectable var overshootAmount : CGFloat = 10
+    
+    override var backgroundColor: UIColor? {
+        willSet {
+            if let newValue = newValue {
+                elasticShape.fillColor = newValue.CGColor
+                super.backgroundColor = UIColor.clearColor()
+            }
+        }
+    }
     
     private let elasticShape = CAShapeLayer()
     
@@ -106,7 +116,7 @@ class ElasticView: UIView {
     func animateControlPoints() {
         
         // 1
-        let overshootAmount : CGFloat = -40.0
+        let overshootAmount : CGFloat = self.overshootAmount
         
         // 2
         UIView.animateWithDuration(0.25, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.5, options: [], animations: { () -> Void in

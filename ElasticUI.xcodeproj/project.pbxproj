@@ -14,6 +14,7 @@
 		C26B7A321ADBD59500777D09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26B7A301ADBD59500777D09 /* LaunchScreen.xib */; };
 		C26B7A3E1ADBD59500777D09 /* ElasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26B7A3D1ADBD59500777D09 /* ElasticUITests.swift */; };
 		C352F5291C45B64B000D0A9F /* ElasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352F5281C45B64B000D0A9F /* ElasticView.swift */; };
+		C352F52B1C45C0BE000D0A9F /* ElasticTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352F52A1C45C0BE000D0A9F /* ElasticTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C26B7A3C1ADBD59500777D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26B7A3D1ADBD59500777D09 /* ElasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticUITests.swift; sourceTree = "<group>"; };
 		C352F5281C45B64B000D0A9F /* ElasticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticView.swift; sourceTree = "<group>"; };
+		C352F52A1C45C0BE000D0A9F /* ElasticTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				C26B7A301ADBD59500777D09 /* LaunchScreen.xib */,
 				C26B7A251ADBD59500777D09 /* Supporting Files */,
 				C352F5281C45B64B000D0A9F /* ElasticView.swift */,
+				C352F52A1C45C0BE000D0A9F /* ElasticTextField.swift */,
 			);
 			path = ElasticUI;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				C26B7A2A1ADBD59500777D09 /* ViewController.swift in Sources */,
 				C352F5291C45B64B000D0A9F /* ElasticView.swift in Sources */,
 				C26B7A281ADBD59500777D09 /* AppDelegate.swift in Sources */,
+				C352F52B1C45C0BE000D0A9F /* ElasticTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
