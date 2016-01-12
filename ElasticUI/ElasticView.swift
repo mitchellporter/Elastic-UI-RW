@@ -44,7 +44,7 @@ class ElasticView: UIView {
         elasticShape.path = UIBezierPath(rect: self.bounds).CGPath
         layer.addSublayer(elasticShape)
         
-        backgroundColor = UIColor.redColor()
+        backgroundColor = UIColor.clearColor()
         clipsToBounds = false
         
         // Add control points
